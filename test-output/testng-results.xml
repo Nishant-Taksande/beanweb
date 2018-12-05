@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://select[@id='drpUserSelection']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://li[text()='Your account is not yet verified. Please verify your account from registered email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[text()='Individual User']]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser Successfully]]>
+    </line>
+    <line>
+      <![CDATA[</table>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="105185" started-at="2018-12-04T16:11:44Z" finished-at="2018-12-04T16:13:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="105185" started-at="2018-12-04T16:11:44Z" finished-at="2018-12-04T16:13:29Z">
+      <class name="regression.RegistrationFunctionalityInactiveUserTest">
+        <test-method status="PASS" signature="aaasetUp(org.testng.ITestContext)[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a]" name="aaasetUp" is-config="true" duration-ms="47" started-at="2018-12-04T21:41:44Z" finished-at="2018-12-04T21:41:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6a47b187]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aaasetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="353" started-at="2018-12-04T21:41:44Z" finished-at="2018-12-04T21:41:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRegistrationInactiveFunctinality()[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a]" name="testRegistrationInactiveFunctinality" duration-ms="101258" started-at="2018-12-04T21:41:45Z" finished-at="2018-12-04T21:43:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://select[@id='drpUserSelection']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://li[text()='Your account is not yet verified. Please verify your account from registered email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[text()='Individual User']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationInactiveFunctinality -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a]" name="checkAlerts" is-config="true" duration-ms="3508" started-at="2018-12-04T21:43:26Z" finished-at="2018-12-04T21:43:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationInactiveFunctinality status=SUCCESS method=RegistrationFunctionalityInactiveUserTest.testRegistrationInactiveFunctinality()[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a] output=Finding element with logic: xpath://select[@id='drpUserSelection']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:regression.RegistrationFunctionalityInactiveUserTest@8bd1b6a]" name="quitBrowser" is-config="true" duration-ms="2" started-at="2018-12-04T21:43:29Z" finished-at="2018-12-04T21:43:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser Successfully]]>
+            </line>
+            <line>
+              <![CDATA[</table>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- regression.RegistrationFunctionalityInactiveUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

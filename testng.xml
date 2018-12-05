@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="beanlogin" parallel="tests" thread-count="3"
+	data-provider-thread-count="1">
+
+	<test name="">
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+</suite>
