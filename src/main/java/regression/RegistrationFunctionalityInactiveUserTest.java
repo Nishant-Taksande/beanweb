@@ -33,8 +33,8 @@ public class RegistrationFunctionalityInactiveUserTest extends TestBase {
 
 		driver = appLibrary.getDriverInstance();
 		appLibrary.launchAppDirectURL("");
-		String emailAddress = "neoTest" + AppLibrary.randInt();
-
+//		String emailAddress = "neoTest" + AppLibrary.randInt();
+		String emailAddress = "neoTest" + AppLibrary.getDate() + AppLibrary.randIntDigits(0, 99);
 		SignUpPage su = new SignUpPage(driver);
 
 		su.fillSignUpForm("Join As Individual", emailAddress, "Mishra", emailAddress + "@mailinator.com", "Admin123!@#",

@@ -2,6 +2,8 @@ package com.beanlogin.pages;
 
 import org.openqa.selenium.WebDriver;
 
+import com.beanlogin.lib.AppLibrary;
+
 public class PortalPage {
 
 	//// header
@@ -21,6 +23,7 @@ public class PortalPage {
 	public static String profileImg = "xpath://img[contains(@src,'avatars/profile')]";
 
 	public static String userName = "xpath://span[@class='username mx-3 d-none d-md-block']";
+	public static String menu = "xpath://div[@id='dropdownUserMenu']";
 	public static String bellIcon = "xpath://i[@class='icon-bell-ring icon-color-white']";
 
 	public static String helpIcon = "xpath://i[@class='icon-help-circle icon-color-white']";
@@ -95,12 +98,19 @@ public class PortalPage {
 
 	
 	
+	
 	public PortalPage(WebDriver driver) {
 		super();
 		this.driver = driver;
 	}
 
-	
+	public void logout(){
+		
+		AppLibrary.clickElement(driver, menu);
+		AppLibrary.clickElement(driver, logout);
+		
+		
+	}
 	
 	
 	

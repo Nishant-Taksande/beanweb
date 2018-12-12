@@ -12,7 +12,7 @@ import com.beanlogin.lib.AppLibrary;
 import com.beanlogin.lib.TestBase;
 import com.beanlogin.pages.SignUpPage;
 
-public class SignUpPageUiTest extends TestBase {
+public class RegistrationPageUiTest extends TestBase {
 
 	public Logger logger;
 
@@ -27,7 +27,7 @@ public class SignUpPageUiTest extends TestBase {
 	}
 
 	@Test
-	public void testSignUpUi() throws Exception {
+	public void testRegistrationUi() throws Exception {
 		driver = appLibrary.getDriverInstance();
 		appLibrary.launchAppDirectURL("");
 		new SignUpPage(driver).verifySignupPageUi();

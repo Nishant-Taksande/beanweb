@@ -15,7 +15,18 @@ public class ForgotPasswordPage {
 	public static String emailInput = "xpath://input[@id='forgotPasswordEmail']";
 	public static String submitButton = "xpath://button[@id='btnForgotPassword']";
 	public static String signInPageLink = "xpath://a[text()='RETURN TO SIGN IN PAGE']";
-
+	
+	
+	
+	//Reset password Page
+	public static String resetPasswordLabel = "xpath://h2[text()='Reset Password']";
+	public static String passwordLabel = "xpath://label[text()='Password']";
+	public static String psdInput = "xpath://input[@id='txtNewPassword']";
+	public static String ConfirmLabel = "xpath://label[text()='Confirm Password']";
+	public static String confirmInput = "xpath://input[@id='txtConfirmNewPassword']";
+	public static String submit = "xpath://button[@id='btnChangePassword']";
+	
+	
 	public ForgotPasswordPage(WebDriver driver) {
 		super();
 		this.driver = driver;
@@ -35,4 +46,16 @@ public class ForgotPasswordPage {
 
 		return new ForgotPasswordPage(driver);
 	}
+	
+	
+	public void fillResetPsdForm(String password) {
+		
+		AppLibrary.enterText(driver, psdInput, password);
+		AppLibrary.enterText(driver, confirmInput, password);
+		AppLibrary.clickElement(driver, submit);
+		
+		
+	}
+	
+	
 }

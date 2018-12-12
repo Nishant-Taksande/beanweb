@@ -61,6 +61,7 @@ public class AppLibrary {
 	private WebDriver mailDriver; // Default Driver instance
 	private Configuration config;
 	public String baseUrl;
+	public String mailUrl;
 	public String siteName;
 	public String browser;
 	public String device;
@@ -92,7 +93,7 @@ public class AppLibrary {
 	 * @param browser
 	 *            -Type of the browser to be used for test execution like "IE",
 	 *            firefox, Chrome etc
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public WebDriver getDriverInstance() throws Exception {
 		DesiredCapabilities caps = new DesiredCapabilities();
@@ -105,6 +106,9 @@ public class AppLibrary {
 		baseUrl = (System.getProperty("instanceUrl") != null
 				&& !(System.getProperty("instanceUrl").equals("${instanceUrl}"))) ? System.getProperty("instanceUrl")
 						: getConfiguration().getURL();
+				
+		mailUrl = (System.getProperty("mailUrl") != null && !(System.getProperty("mailUrl").equals("${mailUrl}")))
+				? System.getProperty("mailUrl") : getConfiguration().getmailURL();
 
 		boolean isBrowserStackExecution = (System.getProperty("isBrowserstackExecution") != null
 				&& !(System.getProperty("isBrowserstackExecution").equals("${isBrowserstackExecution}")))
@@ -462,7 +466,7 @@ public class AppLibrary {
 
 		driver.get(getBaseUrl());
 
-//		navigateTo(target);
+		// navigateTo(target);
 		// waitForNavigation(driver, "login");
 
 		// Maximize the browser
@@ -512,30 +516,32 @@ public class AppLibrary {
 	//
 	// }
 
-//	public void navigateTo(String target) {
-//
-//		if (target.equalsIgnoreCase("login")) {
-//			AppLibrary.clickByJavascript(driver, LandingPage.headerLoginButton);
-//
-//			try {
-//				new WebDriverWait(driver, 10).until(ExpectedConditions
-//						.elementToBeClickable(By.xpath(LoginPage.emailAddressInput.replace("xpath:", ""))));
-//			} catch (Exception e) {
-//				AppLibrary.clickElement(driver, LandingPage.headerLoginButton);
-//			}
-//
-//		} else if (target.equalsIgnoreCase("registration")) {
-//			AppLibrary.clickByJavascript(driver, LandingPage.headerTryNowButton);
-//
-//			try {
-//				new WebDriverWait(driver, 10).until(ExpectedConditions
-//						.elementToBeClickable(By.xpath(RegistrationPage.bankruptcyCrossLabel.replace("xpath:", ""))));
-//			} catch (Exception e) {
-//				AppLibrary.clickElement(driver, LandingPage.headerTryNowButton);
-//			}
-//		}
-//
-//	}
+	// public void navigateTo(String target) {
+	//
+	// if (target.equalsIgnoreCase("login")) {
+	// AppLibrary.clickByJavascript(driver, LandingPage.headerLoginButton);
+	//
+	// try {
+	// new WebDriverWait(driver, 10).until(ExpectedConditions
+	// .elementToBeClickable(By.xpath(LoginPage.emailAddressInput.replace("xpath:",
+	// ""))));
+	// } catch (Exception e) {
+	// AppLibrary.clickElement(driver, LandingPage.headerLoginButton);
+	// }
+	//
+	// } else if (target.equalsIgnoreCase("registration")) {
+	// AppLibrary.clickByJavascript(driver, LandingPage.headerTryNowButton);
+	//
+	// try {
+	// new WebDriverWait(driver, 10).until(ExpectedConditions
+	// .elementToBeClickable(By.xpath(RegistrationPage.bankruptcyCrossLabel.replace("xpath:",
+	// ""))));
+	// } catch (Exception e) {
+	// AppLibrary.clickElement(driver, LandingPage.headerTryNowButton);
+	// }
+	// }
+	//
+	// }
 
 	public String getBaseUrl() {
 		String baseUrl = getConfiguration().getURL();
@@ -1300,16 +1306,16 @@ public class AppLibrary {
 		return false;
 	}
 
-	public static String getDate(int value) {
+	public static String getDate() {
 
 		Date date = new Date();
 
-		Calendar c = Calendar.getInstance();
-		c.setTime(date);
-		c.add(Calendar.DATE, value);
-		date = c.getTime();
+//		Calendar c = Calendar.getInstance();
+//		c.setTime(date);
+//		c.add(Calendar.DATE, value);
+//		date = c.getTime();
 
-		DateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, YYYY  hh:mm aaa");
+		DateFormat dateFormat = new SimpleDateFormat("MMddHHmmss");
 		System.out.println(dateFormat.format(date));
 
 		return dateFormat.format(date);
@@ -1469,63 +1475,104 @@ public class AppLibrary {
 		}
 	}
 
-	public void getVerification(String email) throws Exception {
-
-		// System.setProperty("webdriver.firefox.profile", "default");
-		mailDriver = launchDefaultDriverInstance();
-
-		boolean flag;
-		int counter = 2;
-
-		try {
-			do {
-				flag = false;
-				counter--;
-				System.out.println("Counter = " + counter);
-
-				try {
-
-					mailDriver.get("https://www.mailinator.com/v3/index.jsp?zone=public&query="+email+"#/#inboxpane");
-					AppLibrary.sleep(3000);
-
-					
-					
-					AppLibrary.syncAndClick(mailDriver,
-							"xpath://td[contains(text(),'BeanLogin: Verify Email')]");
-				
-				} catch (Exception e) {
-					flag = true;
-				}
-
-				AppLibrary.sleep(1000);
-				mailDriver.switchTo().frame(AppLibrary.findElement(mailDriver, "xpath://iframe[@id='msg_body']"));
-				AppLibrary.syncAndClick(mailDriver,
-						"xpath://a[text()='click here']");
-				
-				AppLibrary.switchToWindow(mailDriver, 2);
-			    mailDriver.findElement(By.xpath("//label[text()='Email Verification Complete']"));
-			       
-			    AppLibrary.switchToWindow(mailDriver, 1);
-				mailDriver.switchTo().defaultContent();
-				AppLibrary.findElement(mailDriver, "xpath://button[@id='trash_but']").click();// delete
-			} while (flag && counter > 0);
-
-			mailDriver.quit();
-
-		} catch (Exception e1) {
-			mailDriver.quit();
-			throw new Exception("Failed to access verification");
-		}
-	}
-
-//	public void fillCode(WebDriver driver, String code) {
-//		AppLibrary.enterText(driver, LoginPage.input1, code.charAt(0) + "");
-//		AppLibrary.enterText(driver, LoginPage.input2, code.charAt(1) + "");
-//		AppLibrary.enterText(driver, LoginPage.input3, code.charAt(2) + "");
-//		AppLibrary.enterText(driver, LoginPage.input4, code.charAt(3) + "");
-//		AppLibrary.enterText(driver, LoginPage.input5, code.charAt(4) + "");
-//		AppLibrary.enterText(driver, LoginPage.input6, code.charAt(5) + "");
+//	public void getVerification(String email) throws Exception {
+//
+//		// System.setProperty("webdriver.firefox.profile", "default");
+//		mailDriver = launchDefaultDriverInstance();
+//
+//		boolean flag;
+//		int counter = 2;
+//
+//		try {
+//			do {
+//				flag = false;
+//				counter--;
+//				System.out.println("Counter = " + counter);
+//
+//				try {
+//
+//					mailDriver
+//							.get("https://www.mailinator.com/v3/index.jsp?zone=public&query=" + email + "#/#inboxpane");
+//					AppLibrary.sleep(3000);
+//
+//					AppLibrary.syncAndClick(mailDriver, "xpath://td[contains(text(),'BeanLogin: Verify Email')]");
+//
+//				} catch (Exception e) {
+//					flag = true;
+//				}
+//
+//				AppLibrary.sleep(1000);
+//				mailDriver.switchTo().frame(AppLibrary.findElement(mailDriver, "xpath://iframe[@id='msg_body']"));
+//				AppLibrary.syncAndClick(mailDriver, "xpath://a[text()='click here']");
+//
+//				AppLibrary.switchToWindow(mailDriver, 2);
+//				mailDriver.findElement(By.xpath("//label[text()='Email Verification Complete']"));
+//
+//				AppLibrary.switchToWindow(mailDriver, 1);
+//				mailDriver.switchTo().defaultContent();
+//				AppLibrary.findElement(mailDriver, "xpath://button[@id='trash_but']").click();// delete
+//			} while (flag && counter > 0);
+//
+//			mailDriver.quit();
+//
+//		} catch (Exception e1) {
+//			mailDriver.quit();
+//			throw new Exception("Failed to access verification");
+//		}
 //	}
+//
+//	public String getPassword(String email) throws Exception {
+//
+//		String text;
+//		mailDriver = launchDefaultDriverInstance();
+//
+//		boolean flag;
+//		int counter = 2;
+//		try {
+//			do {
+//				flag = false;
+//				counter--;
+//				System.out.println("Counter = " + counter);
+//
+//				try {
+//
+//					mailDriver
+//							.get("https://www.mailinator.com/v3/index.jsp?zone=public&query=" + email + "#/#inboxpane");
+//					AppLibrary.sleep(3000);
+//
+//					AppLibrary.syncAndClick(mailDriver, "xpath://td[contains(text(),'BeanLogin: Forgot Password')]");
+//
+//				} catch (Exception e) {
+//					flag = true;
+//				}
+//
+//				AppLibrary.sleep(1000);
+//
+//				mailDriver.switchTo().frame(AppLibrary.findElement(mailDriver, "xpath://iframe[@id='msg_body']"));
+//				text = AppLibrary.findElement(mailDriver, "xpath://tr//td//b").getText();
+//
+//				mailDriver.switchTo().defaultContent();
+//				AppLibrary.findElement(mailDriver, "xpath://button[@id='trash_but']").click();// delete
+//
+//			} while (flag && counter > 0);
+//
+//			mailDriver.quit();
+//
+//		} catch (Exception e1) {
+//			mailDriver.quit();
+//			throw new Exception("Failed to access verification");
+//		}
+//		return text;
+//	}
+
+	// public void fillCode(WebDriver driver, String code) {
+	// AppLibrary.enterText(driver, LoginPage.input1, code.charAt(0) + "");
+	// AppLibrary.enterText(driver, LoginPage.input2, code.charAt(1) + "");
+	// AppLibrary.enterText(driver, LoginPage.input3, code.charAt(2) + "");
+	// AppLibrary.enterText(driver, LoginPage.input4, code.charAt(3) + "");
+	// AppLibrary.enterText(driver, LoginPage.input5, code.charAt(4) + "");
+	// AppLibrary.enterText(driver, LoginPage.input6, code.charAt(5) + "");
+	// }
 
 	public static void selectDropdown(WebDriver driver, String parent, String child) {
 		AppLibrary.clickElement(driver, parent);

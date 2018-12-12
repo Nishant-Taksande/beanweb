@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.beanlogin.lib.AppLibrary;
 import com.beanlogin.lib.TestBase;
 import com.beanlogin.pages.LoginPage;
+import com.beanlogin.pages.MailinatorPage;
 import com.beanlogin.pages.PortalPage;
 import com.beanlogin.pages.SignUpPage;
 
@@ -34,13 +35,16 @@ public class RegistrationFuctionalityActiveUserTest extends TestBase {
 
 		driver = appLibrary.getDriverInstance();
 		appLibrary.launchAppDirectURL("");
-		String emailAddress = "neoTest" + AppLibrary.randInt();
+//		String emailAddress = "neoTest" + AppLibrary.randInt();
+		String emailAddress = "neoTest" + AppLibrary.getDate() + AppLibrary.randIntDigits(0, 99);
 
 		SignUpPage su = new SignUpPage(driver);
 
 		su.fillSignUpForm("Join As Individual", emailAddress, "Mishra", emailAddress + "@mailinator.com", "Admin123!@#",
 				"Admin123!@#");
-		appLibrary.getVerification(emailAddress);
+		
+		MailinatorPage mp =new MailinatorPage(driver);
+		mp.getVerification(emailAddress);
 		
 		AppLibrary.clickElement(driver, SignUpPage.returnToSignIn);
 		

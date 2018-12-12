@@ -29,6 +29,11 @@ public class LoginPage {
 	//Inactive user message
 	
 	public static String inactiveUser = "xpath://li[text()='Your account is not yet verified. Please verify your account from registered email.']";
+	//wrong pass validation message
+	
+	public static String passValidation = "xpath://li[contains(text(),'For account safety, access will be disabled')]";
+	
+	public static String validation ="xpath://li[text()='Replace']";
 	public LoginPage(WebDriver driver) {
 		super();
 		this.driver = driver;

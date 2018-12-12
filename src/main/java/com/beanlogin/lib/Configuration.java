@@ -8,6 +8,7 @@ import java.util.Properties;
 public class Configuration {
 
 	private String url;
+	private String mailurl;
 	private String user;
 	private String pwd;
 	private String browserName;
@@ -40,6 +41,7 @@ public class Configuration {
 
 		browserName = prop.getProperty("browser.name");
 		url = prop.getProperty("instance.url");
+		mailurl = prop.getProperty("mail.url");
 		user = prop.getProperty("user");
 		chromeDriverPath = prop.getProperty("chrome.driver");
 		isBrowserStackExecution = Boolean.parseBoolean(prop.getProperty("isbrowserstack.execution", "false").trim());
@@ -62,6 +64,11 @@ public class Configuration {
 		return url;
 	}
 
+	public String getmailURL() {
+		return mailurl;
+	}
+	
+	
 	public String getUser() {
 		return user;
 	}

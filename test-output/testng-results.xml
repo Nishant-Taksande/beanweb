@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="14" passed="14">
+  <reporter-output>
+    <line>
+      <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser Successfully]]>
+    </line>
+    <line>
+      <![CDATA[</table>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57253" started-at="2018-12-12T07:33:50Z" finished-at="2018-12-12T07:34:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57253" started-at="2018-12-12T07:33:50Z" finished-at="2018-12-12T07:34:47Z">
+      <class name="regression.RegistrationPasswordValidationTest">
+        <test-method status="PASS" signature="aaasetUp(org.testng.ITestContext)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="aaasetUp" is-config="true" duration-ms="61" started-at="2018-12-12T13:03:50Z" finished-at="2018-12-12T13:03:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@59a008ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aaasetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="setUp" is-config="true" duration-ms="5127" started-at="2018-12-12T13:03:50Z" finished-at="2018-12-12T13:03:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="10349" started-at="2018-12-12T13:03:55Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon+smith@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asdf1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Asdf123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password and Confirm Password must match.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:06Z" finished-at="2018-12-12T13:04:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2873" started-at="2018-12-12T13:04:06Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:09Z" finished-at="2018-12-12T13:04:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2891" started-at="2018-12-12T13:04:09Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon.smith@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password and Confirm Password must match.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:12Z" finished-at="2018-12-12T13:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="3286" started-at="2018-12-12T13:04:12Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jhon@123.123.123.123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:15Z" finished-at="2018-12-12T13:04:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="3365" started-at="2018-12-12T13:04:15Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[“jhon”@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1a]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password and Confirm Password must match.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:18Z" finished-at="2018-12-12T13:04:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2678" started-at="2018-12-12T13:04:18Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon@mailinator-one.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:21Z" finished-at="2018-12-12T13:04:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2790" started-at="2018-12-12T13:04:21Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon@mailinator.name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2718" started-at="2018-12-12T13:04:24Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon@mailinator.co.jp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1A]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:24Z" finished-at="2018-12-12T13:04:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:26Z" finished-at="2018-12-12T13:04:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="3171" started-at="2018-12-12T13:04:26Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon-smith@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2525" started-at="2018-12-12T13:04:30Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@A]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[@A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:30Z" finished-at="2018-12-12T13:04:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:32Z" finished-at="2018-12-12T13:04:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2808" started-at="2018-12-12T13:04:32Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a1A]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a1a]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password and Confirm Password must match.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:35Z" finished-at="2018-12-12T13:04:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2871" started-at="2018-12-12T13:04:35Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a1@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a1@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:38Z" finished-at="2018-12-12T13:04:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="3765" started-at="2018-12-12T13:04:38Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon<smith@gmail.com>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A1@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A1@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-12T13:04:42Z" finished-at="2018-12-12T13:04:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="testRegistrationValidationWithoutContinue" duration-ms="2855" started-at="2018-12-12T13:04:42Z" data-provider="RegistrationWithoutSubmit" finished-at="2018-12-12T13:04:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jhon.mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter valid Email.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password and Confirm Password must match.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtPassword'][text()='Password must have one uppercase, one lowercase, one digit and one symbol in it with minimum length of 6 characters']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistrationValidationWithoutContinue -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-12T13:04:44Z" finished-at="2018-12-12T13:04:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRegistrationValidationWithoutContinue status=SUCCESS method=RegistrationPasswordValidationTest.testRegistrationValidationWithoutContinue(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822] output=Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:regression.RegistrationPasswordValidationTest@cb5822]" name="quitBrowser" is-config="true" duration-ms="2705" started-at="2018-12-12T13:04:44Z" finished-at="2018-12-12T13:04:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser Successfully]]>
+            </line>
+            <line>
+              <![CDATA[</table>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- regression.RegistrationPasswordValidationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

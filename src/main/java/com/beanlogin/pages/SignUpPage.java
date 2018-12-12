@@ -37,7 +37,18 @@ public class SignUpPage {
 	
 	
 	public static String returnToSignIn ="xpath://a[text()='Return To Sign In page']";
-
+	//forgot pass return sign in page
+	public static String forgotReturnSignIn="xpath://a[text()='RETURN TO SIGN IN PAGE']";
+	
+	//validation
+	public static String validation="xpath://span[text()='Replace']";
+	public static String firstNamevalidation="xpath://span[@for='txtfirstName'][text()='Replace']";
+	public static String lastNamevalidation="xpath://span[@for='txtLastName'][text()='Replace']";
+	public static String emailvalidation="xpath://span[@for='txtEmail'][text()='Replace']";
+	public static String passvalidation="xpath://span[@for='txtPassword'][text()='Replace']";
+	public static String cnfPassvalidation="xpath://span[@for='txtConfirmPassword'][text()='Replace']";
+	
+	
 	public SignUpPage(WebDriver driver) {
 		super();
 		this.driver = driver;
@@ -74,20 +85,24 @@ public class SignUpPage {
 		AppLibrary.clickElement(driver, LoginPage.signUpButton);
 		WebElement element = AppLibrary.findElement(driver, dropDownSelection);
 		AppLibrary.selectElement(element, DropDown);
-
+		if (!firstName.equalsIgnoreCase("")){
 		AppLibrary.enterText(driver, firstnameInput, firstName);
+		}
+		if (!lastName.equalsIgnoreCase("")){
 		AppLibrary.enterText(driver, lastNameInput, lastName);
+		}
+		if (!email.equalsIgnoreCase("")){
 		AppLibrary.enterText(driver, emailInput, email);
+		}
+		if (!pass.equalsIgnoreCase("")){
 		AppLibrary.enterText(driver, pswordInput, pass);
+		}
+		if (!confirmPass.equalsIgnoreCase("")){
 		AppLibrary.enterText(driver, confirmPswordInput, confirmPass);
+		}
 		AppLibrary.clickElement(driver, submitButton);
 		
-		//For using function
-//		SignUpPage su = new SignUpPage(driver);
-//
-//		su.fillSignUpForm("Join As Organization", "lokesh", "Mishra", "lokesh@mailinator.com", "Admin123!@#",
-//				"Admin123!@#");
-
+	
 	}
 
 }
