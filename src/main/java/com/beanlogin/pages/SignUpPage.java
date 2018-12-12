@@ -48,6 +48,8 @@ public class SignUpPage {
 	public static String passvalidation="xpath://span[@for='txtPassword'][text()='Replace']";
 	public static String cnfPassvalidation="xpath://span[@for='txtConfirmPassword'][text()='Replace']";
 	
+	//Exiting user validation
+	public static String alreadyRegisteredvalidation="xpath://div[contains(text(),'Error Registering User. User already registered.')]";
 	
 	public SignUpPage(WebDriver driver) {
 		super();

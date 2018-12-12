@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="regression.RegistrationValidationWithSubmit">
+      <class name="regression.ResetPasswordValidationTest">
         <methods>
+          <include name="testResetPassValidation"/>
           <include name="aaasetUp"/>
-          <include name="checkAlerts"/>
-          <include name="quitBrowser"/>
-          <include name="testRegistrationValidationWithSubmitButton" invocation-numbers="11"/>
           <include name="setUp"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- regression.RegistrationValidationWithSubmit -->
+      </class> <!-- regression.ResetPasswordValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

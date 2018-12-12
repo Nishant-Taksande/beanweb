@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.beanlogin.lib.AppLibrary;
@@ -16,26 +17,35 @@ import com.beanlogin.pages.MailinatorPage;
 import com.beanlogin.pages.PortalPage;
 import com.beanlogin.pages.SignUpPage;
 
-public class ForgotPasswordFunctinalityTest extends TestBase {
+public class ResetPasswordValidationTest extends TestBase {
 
 	public Logger logger;
 
+	private AppLibrary appLibrary;
+
+	@DataProvider(name = "passValidation")
+	public String[][] getRegistrationDataFromExcelOne() throws Exception {
+
+		String str[][] = AppLibrary.readExcel("TestData/forgotpasswordvalidation.xls", 1);
+		return str;
+	}
+
 	@BeforeClass
-	public void setUp() throws IOException {
+	public void setUp() throws Exception {
 		appLibrary = new AppLibrary();
-		logger = Logger.getLogger("ForgotPassFunctinalityTest");
-		System.out.println("ForgotPassFunctinalityTestStarted");
+		logger = Logger.getLogger("ResetPassValidationTest");
+		System.out.println("ResetPassValidationTestStarted");
 		PropertyConfigurator.configure("Log4j.properties");
 		Reporter.log(
 				"<h1><Center><Font face=\"arial\" color=\"Orange\">Log Summary</font></Center><h1><table border=\"1\" bgcolor=\"lightgray\">");
+		driver = appLibrary.getDriverInstance();
 	}
 
-	@Test
-	public void testForgotPassFunctinality() throws Exception {
+	@Test(dataProvider = "passValidation")
+	public void testResetPassValidation(String Pass, String CnfPass,String PassValidation,String CnfPassValidation,String exeIndicator) throws Exception {
 
-		driver = appLibrary.getDriverInstance();
+		
 		appLibrary.launchAppDirectURL("");
-//		String emailAddress = "neoTest" + AppLibrary.randInt();
 		String emailAddress = "neoTest" + AppLibrary.getDate() + AppLibrary.randIntDigits(0, 99);
 		SignUpPage su = new SignUpPage(driver);
 
@@ -66,17 +76,20 @@ public class ForgotPasswordFunctinalityTest extends TestBase {
 		lp.signIn(emailAddress + "@mailinator.com", pass);
 
 		ForgotPasswordPage fp = new ForgotPasswordPage(driver);
-		fp.fillResetPsdForm("Pass123!@#","Pass123!@#");
-		AppLibrary.verifyElement(driver, PortalPage.individualUserLabel);
-		pp.logout();
 		
-		//existing pass login
-		lp.signIn(emailAddress + "@mailinator.com", "Admin123!@#");
-		AppLibrary.verifyElement(driver, LoginPage.passValidation);
+		fp.fillResetPsdForm(pass,CnfPass);
 		
-		//new pass login
-		lp.signIn(emailAddress + "@mailinator.com", "Pass123!@#");
-		pp.logout();
+		//pass validation
+//		if (!emailvalidation.equalsIgnoreCase("")) {
+//			AppLibrary.findElement(driver, SignUpPage.emailvalidation.replace("Replace", emailvalidation));
+//		}
+//		
+//		if (!emailvalidation.equalsIgnoreCase("")) {
+//			AppLibrary.findElement(driver, SignUpPage.emailvalidation.replace("Replace", emailvalidation));
+//		}
+//		
+		
+		
 	}
-
+	
 }

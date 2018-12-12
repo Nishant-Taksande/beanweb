@@ -80,23 +80,10 @@ public class RegistrationPasswordValidationTest extends TestBase {
 		}
 	}
 
+	@Override
 	@AfterMethod
-	public void checkAlerts(ITestResult result) throws Exception {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			try {
-				getScreenshot(screenshotName);
-				Reporter.log("Failed at URL: " + appLibrary.getCurrentDriverInstance().getCurrentUrl(), true);
-				int paramsLength = result.getParameters().length;
-				Reporter.log("Screenshot Name : " + screenshotName, true);
-				Reporter.log("ScreenShot for " + testName + " "
-						+ ((paramsLength > 0) ? " with parameter " + result.getParameters()[1] : "") + " saved as "
-						+ screenshotName + ".png", true);
-
-			} catch (Exception e) {
-				Reporter.log("Failed fetching URL and screenshot due to error:" + e.getMessage(), true);
-				e.printStackTrace();
-			}
-		}
+	public void checkAlerts(ITestResult result) {
+		System.out.println("im doing nothign");
 	}
 
 	@Override
