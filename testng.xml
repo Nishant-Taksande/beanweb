@@ -2,12 +2,11 @@
 <suite name="beanlogin" parallel="tests" thread-count="3"
 	data-provider-thread-count="1">
 
-	<test name="Login Functionality Test">
+	<test name="forgot password email validation Test">
 		<classes>
-			<class name="regression.LoginFunctionalityTest" />
+			<class name="regression.ForgotPasswordEmailValidationTest" />
 		</classes>
 	</test>
-
 	<test name="Forgot password Functionality Test">
 		<classes>
 			<class name="regression.ForgotPasswordFunctinalityTest" />
@@ -18,9 +17,29 @@
 			<class name="regression.ForgotPasswordUiTest" />
 		</classes>
 	</test>
+	<test name="Login Functionality Test">
+		<classes>
+			<class name="regression.LoginFunctionalityTest" />
+		</classes>
+	</test>
 	<test name="Login Ui Test">
 		<classes>
 			<class name="regression.LoginPageUiTest" />
+		</classes>
+	</test>
+	<test name="Login validation with invalid email Test">
+		<classes>
+			<class name="regression.LoginValidationWithInvalidEmail" />
+		</classes>
+	</test>
+	<test name="Login validation with invalid password Test">
+		<classes>
+			<class name="regression.LoginValidationWithInvalidPassword" />
+		</classes>
+	</test>
+	<test name="Login validation with valid email Test">
+		<classes>
+			<class name="regression.LoginValidationwithValidEmail" />
 		</classes>
 	</test>
 	<test name="Registration Functionality Active User Test">
@@ -38,4 +57,25 @@
 			<class name="regression.RegistrationPageUiTest" />
 		</classes>
 	</test>
+	<test name="Registration Password Validation Test">
+		<classes>
+			<class name="regression.RegistrationPasswordValidationTest" />
+		</classes>
+	</test>
+	<test name="Registration Validation With Submit">
+		<classes>
+			<class name="regression.RegistrationValidationWithSubmit" />
+		</classes>
+	</test>
+	<test name="Registraton Email Validation For Existing User Test">
+		<classes>
+			<class name="regression.RegistratonEmailValidationForExistingUserTest" />
+		</classes>
+	</test>
+	<test name="Reset Password Validation Test">
+		<classes>
+			<class name="regression.ResetPasswordValidationTest" />
+		</classes>
+	</test>
+	
 </suite>

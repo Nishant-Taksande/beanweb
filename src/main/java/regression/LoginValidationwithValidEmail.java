@@ -50,6 +50,7 @@ public class LoginValidationwithValidEmail extends TestBase {
 	public void registration() throws Exception {
 		appLibrary.launchAppDirectURL("");
 		emailAddress = "neoTest" + AppLibrary.getDate() + AppLibrary.randIntDigits(0, 99);
+		System.out.println(emailAddress);
 		SignUpPage su = new SignUpPage(driverw);
 		su.fillSignUpForm("Join As Individual", emailAddress, "Mishra", emailAddress + "@mailinator.com", "Admin123!@#",
 				"Admin123!@#");

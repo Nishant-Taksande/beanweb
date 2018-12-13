@@ -27,9 +27,14 @@ public class ForgotPasswordPage {
 	public static String submit = "xpath://button[@id='btnChangePassword']";
 	
 	
-	//validation
+	//forgot password page validation
 	public static String emailvalidation = "xpath://span[@data-valmsg-for='EmailAddress'][text()='Replace']";
 	public static String validation = "xpath://span[text()='Replace']";
+	
+	//Reset password page validation
+	
+	public static String passvalidation = "xpath://span[@data-valmsg-for='password'][text()='Replace']";
+	public static String cnfPassvalidation = "xpath://span[@data-valmsg-for='ConfirmPassword'][text()='Replace']";
 	
 	public ForgotPasswordPage(WebDriver driver) {
 		super();
@@ -53,10 +58,10 @@ public class ForgotPasswordPage {
 	
 	
 	public void fillResetPsdForm(String password,String cnfPass) {
-		if (!emailvalidation.equalsIgnoreCase("")) {
+		if (!password.equalsIgnoreCase("")) {
 		AppLibrary.enterText(driver, psdInput, password);
 		}
-		if (!emailvalidation.equalsIgnoreCase("")) {
+		if (!cnfPass.equalsIgnoreCase("")) {
 		AppLibrary.enterText(driver, confirmInput, cnfPass);
 		}
 		AppLibrary.clickElement(driver, submit);
