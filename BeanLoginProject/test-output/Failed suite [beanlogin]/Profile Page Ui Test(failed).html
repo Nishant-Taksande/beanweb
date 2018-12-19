@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>TestNG:  Profile Page Ui Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Profile Page Ui Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 18 19:34:10 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>188 seconds (188121 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='regression.ProfilePageUiTest.testMyProfilePageUi()'><b>testMyProfilePageUi</b><br>Test class: regression.ProfilePageUiTest<br/>
+<a href="#Output-736437802" onClick='toggleBox("Output-736437802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-736437802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-736437802">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]<br/>
+Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]<br/>
+Finding element with logic: xpath://iframe[@id='msg_body']<br/>
+Finding element with logic: xpath://a[text()='click here']<br/>
+Finding element with logic: xpath://a[text()='click here']<br/>
+Current no. of windows are: 2<br/>
+Current no. of windows are: 2<br/>
+Finding element with logic: xpath://button[@id='trash_but']<br/>
+Finding element with logic: xpath://span[text()='User Profile']<br/>
+Finding element with logic: xpath://h6[text()='Basic Details']<br/>
+Finding element with logic: xpath://label[text()='Title']<br/>
+Finding element with logic: xpath://input[@id='Title']<br/>
+Finding element with logic: xpath://label[text()='First Name']<br/>
+Finding element with logic: xpath://input[@id='txtfirstName']<br/>
+Finding element with logic: xpath://label[text()='Last Name']<br/>
+Finding element with logic: xpath://input[@id='LastName']<br/>
+Finding element with logic: xpath://label[text()='Email Address']<br/>
+Finding element with logic: xpath://input[@id='txtEmail']<br/>
+Finding element with logic: xpath://label[text()='Secondary Email']<br/>
+Finding element with logic: xpath://input[@id='txtSecondaryEmail']<br/>
+Finding element with logic: xpath://label[text()='Phone Numnber']<br/>
+Finding element with logic: xpath://input[@id='PhoneNumber']<br/>
+Finding element with logic: xpath://label[text()='Address']<br/>
+Finding element with logic: xpath://input[@id='Address']<br/>
+Finding element with logic: xpath://label[text()='Organization Name']<br/>
+Finding element with logic: xpath://input[@id='txtOrgName']<br/>
+Finding element with logic: xpath://h6[text()='Additional Information']<br/>
+Finding element with logic: xpath://button[@id='btnUpdate'][contains(text(),'Save')]<br/>
+Finding element with logic: xpath://h6[text()='Security']<br/>
+Finding element with logic: xpath://span[contains(text(),'Enable Two Factor Authentication')]<br/>
+Finding element with logic: xpath://div//label[input[contains(@id,'EnableTwoFactorAuth')]]//span<br/>
+Finding element with logic: xpath://span[contains(text(),'Kill Switch')]<br/>
+Finding element with logic: xpath://div//label[input[contains(@id,'DeletePassword')]]//span<br/>
+Finding element with logic: xpath://span[contains(text(),'Allow BeanLogin PopUps')]<br/>
+Finding element with logic: xpath://div//label[input[contains(@id,'BeanLoginPopup')]]//span<br/>
+Finding element with logic: xpath://a[text()='Password Generator']<br/>
+Finding element with logic: xpath://h6[text()='Change Password']<br/>
+Finding element with logic: xpath://b[text()='Minimum Requirements']<br/>
+Finding element with logic: xpath://li[text()='Minimum 6 characters in length.']<br/>
+Finding element with logic: xpath://li[text()='1 Uppercase Letter']<br/>
+Finding element with logic: xpath://li[text()='1 Lowercase Letter']<br/>
+Finding element with logic: xpath://li[text()='1 Number']<br/>
+Finding element with logic: xpath://li[text()='1 Symbol']<br/>
+Finding element with logic: xpath://label[text()='Current Password']<br/>
+Finding element with logic: xpath://input[@id='txtCurrentpassword']<br/>
+Finding element with logic: xpath://label[text()='New Password']<br/>
+Finding element with logic: xpath://input[@id='txtNewPassword']<br/>
+Finding element with logic: xpath://label[text()='Confirm Password']<br/>
+Finding element with logic: xpath://input[@id='txtConfirmNewPassword']<br/>
+Finding element with logic: xpath://button[@id='btnResetPassword'][contains(text(),'Save')]<br/>
+Finding element with logic: xpath://h6[text()='Active Devices']<br/>
+</div>
+</td>
+<td></td>
+<td>186</td>
+<td>regression.ProfilePageUiTest@335eadca</td></tr>
+</table><p>
+</body>
+</html>

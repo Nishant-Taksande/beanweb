@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [beanlogin]" parallel="tests" data-provider-thread-count="1">
+  <test name="forgot password email validation Test(failed)" parallel="tests">
+    <classes>
+      <class name="regression.ForgotPasswordUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordUiTest -->
+      <class name="regression.ResetPasswordValidationTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ResetPasswordValidationTest -->
+      <class name="regression.RegistratonEmailValidationForExistingUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistratonEmailValidationForExistingUserTest -->
+      <class name="regression.SecondaryEmailVerificationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.SecondaryEmailVerificationTest -->
+      <class name="regression.LoginPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginPageUiTest -->
+      <class name="regression.ForgotPasswordFunctinalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordFunctinalityTest -->
+      <class name="regression.LoginValidationWithInvalidPassword">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidPassword -->
+      <class name="regression.ForgotPasswordEmailValidationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="quitBrowser"/>
+          <include name="testpasswordvalidation" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordEmailValidationTest -->
+      <class name="regression.LoginValidationwithValidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginValidationwithValidEmail -->
+      <class name="regression.RegistrationPasswordValidationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.RegistrationPasswordValidationTest -->
+      <class name="regression.LoginValidationWithInvalidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidEmail -->
+      <class name="regression.RegistrationValidationWithSubmit">
+        <methods>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistrationValidationWithSubmit -->
+      <class name="regression.RegistrationPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationPageUiTest -->
+      <class name="regression.ProfilePageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ProfilePageUiTest -->
+      <class name="regression.LoginFunctionalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginFunctionalityTest -->
+      <class name="regression.RegistrationFuctionalityActiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFuctionalityActiveUserTest -->
+      <class name="regression.RegistrationFunctionalityInactiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFunctionalityInactiveUserTest -->
+    </classes>
+  </test> <!-- forgot password email validation Test(failed) -->
+  <test name="Login validation with valid email Test(failed)" parallel="tests">
+    <classes>
+      <class name="regression.ForgotPasswordUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordUiTest -->
+      <class name="regression.ResetPasswordValidationTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ResetPasswordValidationTest -->
+      <class name="regression.RegistratonEmailValidationForExistingUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistratonEmailValidationForExistingUserTest -->
+      <class name="regression.SecondaryEmailVerificationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.SecondaryEmailVerificationTest -->
+      <class name="regression.LoginPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginPageUiTest -->
+      <class name="regression.ForgotPasswordFunctinalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordFunctinalityTest -->
+      <class name="regression.LoginValidationWithInvalidPassword">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidPassword -->
+      <class name="regression.ForgotPasswordEmailValidationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordEmailValidationTest -->
+      <class name="regression.LoginValidationwithValidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="testLoginValidationWithValidEmail" invocation-numbers="1 2"/>
+          <include name="setUp"/>
+          <include name="registration"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginValidationwithValidEmail -->
+      <class name="regression.RegistrationPasswordValidationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.RegistrationPasswordValidationTest -->
+      <class name="regression.LoginValidationWithInvalidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidEmail -->
+      <class name="regression.RegistrationValidationWithSubmit">
+        <methods>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistrationValidationWithSubmit -->
+      <class name="regression.RegistrationPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationPageUiTest -->
+      <class name="regression.ProfilePageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ProfilePageUiTest -->
+      <class name="regression.LoginFunctionalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginFunctionalityTest -->
+      <class name="regression.RegistrationFuctionalityActiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFuctionalityActiveUserTest -->
+      <class name="regression.RegistrationFunctionalityInactiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFunctionalityInactiveUserTest -->
+    </classes>
+  </test> <!-- Login validation with valid email Test(failed) -->
+  <test name="Secondary Email Verification Test(failed)" parallel="tests">
+    <classes>
+      <class name="regression.ForgotPasswordUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordUiTest -->
+      <class name="regression.ResetPasswordValidationTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ResetPasswordValidationTest -->
+      <class name="regression.RegistratonEmailValidationForExistingUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistratonEmailValidationForExistingUserTest -->
+      <class name="regression.SecondaryEmailVerificationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="testSecEmailVerification"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.SecondaryEmailVerificationTest -->
+      <class name="regression.LoginPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginPageUiTest -->
+      <class name="regression.ForgotPasswordFunctinalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordFunctinalityTest -->
+      <class name="regression.LoginValidationWithInvalidPassword">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidPassword -->
+      <class name="regression.ForgotPasswordEmailValidationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordEmailValidationTest -->
+      <class name="regression.LoginValidationwithValidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginValidationwithValidEmail -->
+      <class name="regression.RegistrationPasswordValidationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.RegistrationPasswordValidationTest -->
+      <class name="regression.LoginValidationWithInvalidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidEmail -->
+      <class name="regression.RegistrationValidationWithSubmit">
+        <methods>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistrationValidationWithSubmit -->
+      <class name="regression.RegistrationPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationPageUiTest -->
+      <class name="regression.ProfilePageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ProfilePageUiTest -->
+      <class name="regression.LoginFunctionalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginFunctionalityTest -->
+      <class name="regression.RegistrationFuctionalityActiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFuctionalityActiveUserTest -->
+      <class name="regression.RegistrationFunctionalityInactiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFunctionalityInactiveUserTest -->
+    </classes>
+  </test> <!-- Secondary Email Verification Test(failed) -->
+  <test name="Profile Page Ui Test(failed)" parallel="tests">
+    <classes>
+      <class name="regression.ForgotPasswordUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordUiTest -->
+      <class name="regression.ResetPasswordValidationTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ResetPasswordValidationTest -->
+      <class name="regression.RegistratonEmailValidationForExistingUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistratonEmailValidationForExistingUserTest -->
+      <class name="regression.SecondaryEmailVerificationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.SecondaryEmailVerificationTest -->
+      <class name="regression.LoginPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginPageUiTest -->
+      <class name="regression.ForgotPasswordFunctinalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordFunctinalityTest -->
+      <class name="regression.LoginValidationWithInvalidPassword">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidPassword -->
+      <class name="regression.ForgotPasswordEmailValidationTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.ForgotPasswordEmailValidationTest -->
+      <class name="regression.LoginValidationwithValidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.LoginValidationwithValidEmail -->
+      <class name="regression.RegistrationPasswordValidationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.RegistrationPasswordValidationTest -->
+      <class name="regression.LoginValidationWithInvalidEmail">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- regression.LoginValidationWithInvalidEmail -->
+      <class name="regression.RegistrationValidationWithSubmit">
+        <methods>
+          <include name="checkAlerts"/>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.RegistrationValidationWithSubmit -->
+      <class name="regression.RegistrationPageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationPageUiTest -->
+      <class name="regression.ProfilePageUiTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+          <include name="testMyProfilePageUi"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.ProfilePageUiTest -->
+      <class name="regression.LoginFunctionalityTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- regression.LoginFunctionalityTest -->
+      <class name="regression.RegistrationFuctionalityActiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFuctionalityActiveUserTest -->
+      <class name="regression.RegistrationFunctionalityInactiveUserTest">
+        <methods>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="checkAlerts"/>
+        </methods>
+      </class> <!-- regression.RegistrationFunctionalityInactiveUserTest -->
+    </classes>
+  </test> <!-- Profile Page Ui Test(failed) -->
+</suite> <!-- Failed suite [beanlogin] -->

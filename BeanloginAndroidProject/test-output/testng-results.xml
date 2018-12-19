@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: id:com.anisolutions.BeanLogin:id/tv_forgot_pass]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://*[@text ='Enter your Email Address below to reset your password.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://*[@text ='Email']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://*[@text ='Back']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://*[@text ='Submit']]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser Successfully]]>
+    </line>
+    <line>
+      <![CDATA[</table>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26003" started-at="2018-12-19T14:11:37Z" finished-at="2018-12-19T14:12:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26003" started-at="2018-12-19T14:11:37Z" finished-at="2018-12-19T14:12:03Z">
+      <class name="BeanLoginTest.Regression.forgotPasswordUiTest">
+        <test-method status="PASS" signature="aaasetUp(org.testng.ITestContext)[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679]" name="aaasetUp" is-config="true" duration-ms="73" started-at="2018-12-19T19:41:37Z" finished-at="2018-12-19T19:41:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5038d0b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aaasetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679]" name="setUp" is-config="true" duration-ms="435" started-at="2018-12-19T19:41:37Z" finished-at="2018-12-19T19:41:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testForgotPassUi()[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679]" name="testForgotPassUi" duration-ms="22980" started-at="2018-12-19T19:41:38Z" finished-at="2018-12-19T19:42:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: id:com.anisolutions.BeanLogin:id/tv_forgot_pass]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://*[@text ='Enter your Email Address below to reset your password.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://*[@text ='Email']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://*[@text ='Back']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://*[@text ='Submit']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassUi -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679]" name="checkAlerts" is-config="true" duration-ms="1" started-at="2018-12-19T19:42:01Z" finished-at="2018-12-19T19:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotPassUi status=SUCCESS method=forgotPasswordUiTest.testForgotPassUi()[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679] output=Finding element with logic: id:com.anisolutions.BeanLogin:id/tv_forgot_pass]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:BeanLoginTest.Regression.forgotPasswordUiTest@29774679]" name="quitBrowser" is-config="true" duration-ms="2495" started-at="2018-12-19T19:42:01Z" finished-at="2018-12-19T19:42:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser Successfully]]>
+            </line>
+            <line>
+              <![CDATA[</table>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- BeanLoginTest.Regression.forgotPasswordUiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

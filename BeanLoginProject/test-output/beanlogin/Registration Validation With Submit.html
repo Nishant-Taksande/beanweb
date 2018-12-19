@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>TestNG:  Registration Validation With Submit</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Registration Validation With Submit</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 18 19:20:22 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>265 seconds (265796 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: , , , , , First Name field is required., Last Name field is required., The Email Address field is required., Password is required, Confirm Password is required, Yes<br/>
+<a href="#Output-1970527585" onClick='toggleBox("Output-1970527585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1970527585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1970527585">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtfirstName'][text()='First Name field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtLastName'][text()='Last Name field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='The Email Address field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtPassword'][text()='Password is required']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Confirm Password is required']<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, , , , , , Last Name field is required., The Email Address field is required., Password is required, Confirm Password is required, Yes<br/>
+<a href="#Output-815094656" onClick='toggleBox("Output-815094656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-815094656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-815094656">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtLastName'][text()='Last Name field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='The Email Address field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtPassword'][text()='Password is required']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Confirm Password is required']<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, , , , , , The Email Address field is required., Password is required, Confirm Password is required, Yes<br/>
+<a href="#Output-340926019" onClick='toggleBox("Output-340926019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340926019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340926019">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='The Email Address field is required.']<br/>
+Finding element with logic: xpath://span[@for='txtPassword'][text()='Password is required']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Confirm Password is required']<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, asdf@mailinator.com, , , , , , Password is required, Confirm Password is required, Yes<br/>
+<a href="#Output-1734329694" onClick='toggleBox("Output-1734329694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1734329694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1734329694">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtPassword'][text()='Password is required']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Confirm Password is required']<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, asdf@mailinator.com, Pass@123, , , , , , Confirm Password is required, Yes<br/>
+<a href="#Output-1081978191" onClick='toggleBox("Output-1081978191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1081978191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1081978191">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Confirm Password is required']<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, asdf, Pass@124, Pass@124, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-1906315595" onClick='toggleBox("Output-1906315595", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1906315595" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1906315595">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, !@#$%.com, Pass@125, Pass@125, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-192124035" onClick='toggleBox("Output-192124035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-192124035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-192124035">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, @gmail.com, Pass@126, Pass@126, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-188137239" onClick='toggleBox("Output-188137239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-188137239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-188137239">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon<smith@gmail.com>, Pass@127, Pass@127, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-2032089515" onClick='toggleBox("Output-2032089515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2032089515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2032089515">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon.mailinator.com, Pass@128, Pass@128, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-851284211" onClick='toggleBox("Output-851284211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-851284211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-851284211">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon@gmail@gmail.com, Pass@129, Pass@129, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-1797141763" onClick='toggleBox("Output-1797141763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1797141763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1797141763">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, 123@gmail.com, Pass@131, Pass@130, , , , , Password and Confirm Password must match., Yes<br/>
+<a href="#Output-696125189" onClick='toggleBox("Output-696125189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696125189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696125189">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon@gmail..com, Pass@131, Pass@131, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-76640358" onClick='toggleBox("Output-76640358", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-76640358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-76640358">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon@gmail, Pass@132, Pass@132, , , Please enter valid Email., , , Yes<br/>
+<a href="#Output-918996332" onClick='toggleBox("Output-918996332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-918996332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-918996332">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, jhon@.com, Pass@133, Pass@134, , , Please enter valid Email., , Password and Confirm Password must match., Yes<br/>
+<a href="#Output-1487441284" onClick='toggleBox("Output-1487441284", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487441284" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487441284">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+<tr>
+<td title='regression.RegistrationValidationWithSubmit.testRegistrationValidationWithSubmitButton()'><b>testRegistrationValidationWithSubmitButton</b><br>Test class: regression.RegistrationValidationWithSubmit<br>Parameters: denny, nikloe, 567, Pass@134, Pass@132, , , Please enter valid Email., , Password and Confirm Password must match., Yes<br/>
+<a href="#Output-605313501" onClick='toggleBox("Output-605313501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-605313501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-605313501">
+Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
+Finding element with logic: xpath://span[@for='txtEmail'][text()='Please enter valid Email.']<br/>
+Finding element with logic: xpath://span[@for='txtConfirmPassword'][text()='Password and Confirm Password must match.']<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>regression.RegistrationValidationWithSubmit@21213b92</td></tr>
+</table><p>
+</body>
+</html>

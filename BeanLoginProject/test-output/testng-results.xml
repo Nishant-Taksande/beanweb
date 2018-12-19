@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://select[@id='drpUserSelection']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://iframe[@id='msg_body']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+    </line>
+    <line>
+      <![CDATA[Current no. of windows are: 2]]>
+    </line>
+    <line>
+      <![CDATA[Current no. of windows are: 2]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='trash_but']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='btnModalOK']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='btnModalOK']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='btnUpdate'][contains(text(),'Save')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='btnUpdate'][contains(text(),'Save')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://i[@id='secondaryEmailNotVerified']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://iframe[@id='msg_body']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+    </line>
+    <line>
+      <![CDATA[Current no. of windows are: 2]]>
+    </line>
+    <line>
+      <![CDATA[Current no. of windows are: 2]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='trash_but']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://i[@id='secondaryEmailVerified']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://p[text()='Enter your Email Address below to reset your password.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://label[text()='Email Address']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://input[@id='forgotPasswordEmail']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[@id='btnForgotPassword']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://p[text()='Please choose one of your email addresses to recieve temporary password.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://input[@id='PrimaryEmailCheck']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://label[@id='PrimaryEmail']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://input[@id='SecondaryEmailCheck']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://label[@id='SecondaryEmail']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[text()='Submit']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://p[text()='Enter the same email address which you have selected earlier.']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://input[@id='RecoveryEmailId']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://button[text()='Submit']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://div[@id='DivEmailSent']]]>
+    </line>
+    <line>
+      <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser Successfully]]>
+    </line>
+    <line>
+      <![CDATA[</table>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="385414" started-at="2018-12-19T06:23:28Z" finished-at="2018-12-19T06:29:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="385414" started-at="2018-12-19T06:23:28Z" finished-at="2018-12-19T06:29:53Z">
+      <class name="regression.ForgotPasswordSecondaryMailPageUiTest">
+        <test-method status="PASS" signature="aaasetUp(org.testng.ITestContext)[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="aaasetUp" is-config="true" duration-ms="1395" started-at="2018-12-19T11:53:28Z" finished-at="2018-12-19T11:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@16b2bb0c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aaasetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="setUp" is-config="true" duration-ms="26991" started-at="2018-12-19T11:53:29Z" finished-at="2018-12-19T11:53:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h1><Center><Font face="arial" color="Orange">Log Summary</font></Center><h1><table border="1" bgcolor="lightgray">]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="registration()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="registration" duration-ms="337293" started-at="2018-12-19T11:53:56Z" finished-at="2018-12-19T11:59:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://select[@id='drpUserSelection']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://iframe[@id='msg_body']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+            </line>
+            <line>
+              <![CDATA[Current no. of windows are: 2]]>
+            </line>
+            <line>
+              <![CDATA[Current no. of windows are: 2]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='trash_but']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='btnModalOK']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='btnModalOK']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='btnUpdate'][contains(text(),'Save')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='btnUpdate'][contains(text(),'Save')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://i[@id='secondaryEmailNotVerified']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://iframe[@id='msg_body']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='click here']]]>
+            </line>
+            <line>
+              <![CDATA[Current no. of windows are: 2]]>
+            </line>
+            <line>
+              <![CDATA[Current no. of windows are: 2]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='trash_but']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://i[@id='secondaryEmailVerified']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="4" started-at="2018-12-19T11:59:34Z" finished-at="2018-12-19T11:59:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registration status=SUCCESS method=ForgotPasswordSecondaryMailPageUiTest.registration()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822] output=Finding element with logic: xpath://select[@id='drpUserSelection']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="testForgotPassUi()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="testForgotPassUi" duration-ms="16139" started-at="2018-12-19T11:59:34Z" depends-on-methods="regression.ForgotPasswordSecondaryMailPageUiTest.registration" finished-at="2018-12-19T11:59:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://p[text()='Enter your Email Address below to reset your password.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://label[text()='Email Address']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://input[@id='forgotPasswordEmail']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[@id='btnForgotPassword']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://p[text()='Please choose one of your email addresses to recieve temporary password.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://input[@id='PrimaryEmailCheck']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://label[@id='PrimaryEmail']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://input[@id='SecondaryEmailCheck']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://label[@id='SecondaryEmail']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[text()='Submit']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://p[text()='Enter the same email address which you have selected earlier.']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://input[@id='RecoveryEmailId']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://button[text()='Submit']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://h2[text()='Forgot Password ?']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://div[@id='DivEmailSent']]]>
+            </line>
+            <line>
+              <![CDATA[Finding element with logic: xpath://a[text()='RETURN TO SIGN IN PAGE']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassUi -->
+        <test-method status="PASS" signature="checkAlerts(org.testng.ITestResult)[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="checkAlerts" is-config="true" duration-ms="0" started-at="2018-12-19T11:59:50Z" finished-at="2018-12-19T11:59:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotPassUi status=SUCCESS method=ForgotPasswordSecondaryMailPageUiTest.testForgotPassUi()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822] output=Finding element with logic: xpath://h2[text()='Forgot Password ?']]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAlerts -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:regression.ForgotPasswordSecondaryMailPageUiTest@cb5822]" name="quitBrowser" is-config="true" duration-ms="3525" started-at="2018-12-19T11:59:50Z" finished-at="2018-12-19T11:59:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser Successfully]]>
+            </line>
+            <line>
+              <![CDATA[</table>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- regression.ForgotPasswordSecondaryMailPageUiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

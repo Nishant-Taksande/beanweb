@@ -1,0 +1,396 @@
+<html>
+<head>
+<title>TestNG:  Login validation with invalid email Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login validation with invalid email Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 18 19:16:11 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>209 seconds (209423 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: , , Email and Password fields are required., Yes<br/>
+<a href="#Output-1240866908" onClick='toggleBox("Output-1240866908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1240866908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1240866908">
+Finding element with logic: xpath://li[text()='Email and Password fields are required.']<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: , Asdf@123, Email field is required., Yes<br/>
+<a href="#Output-35708193" onClick='toggleBox("Output-35708193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-35708193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-35708193">
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='Email field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: asdf@gmail.com, , Password field is required., Yes<br/>
+<a href="#Output-10728248" onClick='toggleBox("Output-10728248", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10728248" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10728248">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: imam@mailinator.com, Asdf@123, The email you entered is incorrect., Yes<br/>
+<a href="#Output-487478575" onClick='toggleBox("Output-487478575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-487478575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-487478575">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: asdf, Asdf@123, The email you entered is incorrect., Yes<br/>
+<a href="#Output-1611063300" onClick='toggleBox("Output-1611063300", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1611063300" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1611063300">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: imam@mailinator.com, agam@123, The email you entered is incorrect., Yes<br/>
+<a href="#Output-894976367" onClick='toggleBox("Output-894976367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-894976367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-894976367">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: imam@mailinator.com, agam@zxc, The email you entered is incorrect., Yes<br/>
+<a href="#Output-915571982" onClick='toggleBox("Output-915571982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-915571982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-915571982">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: imam@mailinator.com, AGAM@123, The email you entered is incorrect., Yes<br/>
+<a href="#Output-521501160" onClick='toggleBox("Output-521501160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-521501160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-521501160">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: imam@mailinator.com, Agam@12, The email you entered is incorrect., Yes<br/>
+<a href="#Output-987046756" onClick='toggleBox("Output-987046756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-987046756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-987046756">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://input[@id='Password']<br/>
+Finding element with logic: xpath://li[text()='The email you entered is incorrect.']<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@gmail@gmail.com, , Password field is required., Yes<br/>
+<a href="#Output-1284088434" onClick='toggleBox("Output-1284088434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1284088434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1284088434">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: 5678@gmail.com, , Password field is required., Yes<br/>
+<a href="#Output-139330848" onClick='toggleBox("Output-139330848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139330848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139330848">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@gmail..com, , Password field is required., Yes<br/>
+<a href="#Output-1357250687" onClick='toggleBox("Output-1357250687", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1357250687" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1357250687">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@gmail, , Password field is required., Yes<br/>
+<a href="#Output-1965016520" onClick='toggleBox("Output-1965016520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1965016520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1965016520">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@.com, , Password field is required., Yes<br/>
+<a href="#Output-587379666" onClick='toggleBox("Output-587379666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-587379666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-587379666">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: 567, , Password field is required., Yes<br/>
+<a href="#Output-214521782" onClick='toggleBox("Output-214521782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-214521782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-214521782">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon+smith@gmail.com, , Password field is required., Yes<br/>
+<a href="#Output-1333660820" onClick='toggleBox("Output-1333660820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1333660820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1333660820">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@mailinator.com, , Password field is required., Yes<br/>
+<a href="#Output-260728934" onClick='toggleBox("Output-260728934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-260728934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-260728934">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon.smith@mailinator.com, , Password field is required., Yes<br/>
+<a href="#Output-189972682" onClick='toggleBox("Output-189972682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-189972682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-189972682">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: Jhon@123.123.123.123, , Password field is required., Yes<br/>
+<a href="#Output-492860371" onClick='toggleBox("Output-492860371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-492860371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-492860371">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: “jhon”@mailinator.com, , Password field is required., Yes<br/>
+<a href="#Output-465697441" onClick='toggleBox("Output-465697441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-465697441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-465697441">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@mailinator-one.com, , Password field is required., Yes<br/>
+<a href="#Output-453540185" onClick='toggleBox("Output-453540185", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-453540185" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-453540185">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@mailinator.name, , Password field is required., Yes<br/>
+<a href="#Output-1854669907" onClick='toggleBox("Output-1854669907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1854669907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1854669907">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon@mailinator.co.jp, , Password field is required., Yes<br/>
+<a href="#Output-1571697657" onClick='toggleBox("Output-1571697657", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1571697657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1571697657">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+<tr>
+<td title='regression.LoginValidationWithInvalidEmail.testLoginValidationWithInvalidEmail()'><b>testLoginValidationWithInvalidEmail</b><br>Test class: regression.LoginValidationWithInvalidEmail<br>Parameters: jhon-smith@mailinator.com, , Password field is required., Yes<br/>
+<a href="#Output-489365639" onClick='toggleBox("Output-489365639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-489365639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-489365639">
+Finding element with logic: xpath://input[@id='Email']<br/>
+Finding element with logic: xpath://li[text()='Password field is required.']<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>regression.LoginValidationWithInvalidEmail@42dafa95</td></tr>
+</table><p>
+</body>
+</html>
