@@ -17,6 +17,8 @@ import BeanLoginTest.lib.AppLibrary;
 import BeanLoginTest.lib.TestBase;
 import BeanLoginTest.pages.ForgotPasswordPage;
 import BeanLoginTest.pages.LoginPage;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 
 
 
@@ -36,7 +38,7 @@ public class LoginPageUiTest extends TestBase {
 
 	@Test
 	public void testLoginUi() throws Exception {
-		driver = appLibrary.getDriverInstance();
+		driver = (AndroidDriver<MobileElement>) appLibrary.getDriverInstance();
 	
 	System.out.println(driver.toString());
 		new LoginPage(driver).verifyLoginPageUi();

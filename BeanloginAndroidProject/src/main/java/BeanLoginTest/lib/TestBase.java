@@ -12,6 +12,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -19,8 +20,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
 public class TestBase {
-	public WebDriver driver;
+	public AndroidDriver<MobileElement> driver;
 	protected AppLibrary appLibrary; // Application Library instance
 //	public AppLibrary appLibrary; 
 	Properties usersProperties = null;
@@ -58,7 +62,7 @@ public class TestBase {
 	}
 
 	public void getScreenshot(String name) throws IOException {
-		driver = appLibrary.getCurrentDriverInstance();
+		driver = (AndroidDriver<MobileElement>) appLibrary.getCurrentDriverInstance();
 		String path = "screenshots/" + name;
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(path));

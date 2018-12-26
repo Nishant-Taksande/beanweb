@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Registration Functionality Active User Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 18 19:18:55 IST 2018</td>
+<td>Started on:</td><td>Wed Dec 19 23:15:13 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86868 ms)</td>
+<tr><td>Total time:</td><td>106 seconds (106294 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,10 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='regression.RegistrationFuctionalityActiveUserTest.testRegistrationFunctinality()'><b>testRegistrationFunctinality</b><br>Test class: regression.RegistrationFuctionalityActiveUserTest<br/>
-<a href="#Output-935998817" onClick='toggleBox("Output-935998817", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-889070425" onClick='toggleBox("Output-889070425", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-935998817" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-935998817">
+<a href="#Output-889070425" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-889070425">
 Finding element with logic: xpath://select[@id='drpUserSelection']<br/>
 Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]<br/>
 Finding element with logic: xpath://td[contains(text(),'BeanLogin: Verify Email')]<br/>
@@ -90,13 +90,43 @@ Current no. of windows are: 2<br/>
 Current no. of windows are: 2<br/>
 Finding element with logic: xpath://button[@id='trash_but']<br/>
 Finding element with logic: xpath://span[text()='Individual User']<br/>
-Finding element with logic: xpath://input[@id='txtEmail']<br/>
-Finding element with logic: xpath://input[@id='txtfirstName']<br/>
-Finding element with logic: xpath://input[@id='LastName']<br/>
 </div>
 </td>
-<td></td>
-<td>83</td>
+<td><div><pre>com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[xpath://span[text()=&apos;My Profile&apos;]] attributeName=[ElementVal] attributeValue=[Not Found]
+	at com.beanlogin.lib.AppLibrary.clickElement(AppLibrary.java:1269)
+	at com.beanlogin.pages.MyProfilePage.verifyPortalEmail(MyProfilePage.java:178)
+	at regression.RegistrationFuctionalityActiveUserTest.testRegistrationFunctinality(RegistrationFuctionalityActiveUserTest.java:61)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace889070425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889070425'><pre>com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[xpath://span[text()=&apos;My Profile&apos;]] attributeName=[ElementVal] attributeValue=[Not Found]
+	at com.beanlogin.lib.AppLibrary.clickElement(AppLibrary.java:1269)
+	at com.beanlogin.pages.MyProfilePage.verifyPortalEmail(MyProfilePage.java:178)
+	at regression.RegistrationFuctionalityActiveUserTest.testRegistrationFunctinality(RegistrationFuctionalityActiveUserTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>98</td>
 <td>regression.RegistrationFuctionalityActiveUserTest@4566e5bd</td></tr>
 </table><p>
 </body>

@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 import BeanLoginTest.lib.AppLibrary;
 import BeanLoginTest.lib.TestBase;
 import BeanLoginTest.pages.ForgotPasswordPage;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 
 public class ForgotPasswordUiTest extends TestBase {
 
@@ -22,8 +24,8 @@ public class ForgotPasswordUiTest extends TestBase {
 	 @BeforeClass
 	public void setUp() throws IOException {
 		appLibrary = new AppLibrary();
-		logger = Logger.getLogger("LoginPageUiTest");
-		System.out.println("LoginUiTestStarted");
+		logger = Logger.getLogger("ForgotPageUiTest");
+		System.out.println("ForgotPageUiTestStarted");
 		PropertyConfigurator.configure("Log4j.properties");
 		Reporter.log(
 				"<h1><Center><Font face=\"arial\" color=\"Orange\">Log Summary</font></Center><h1><table border=\"1\" bgcolor=\"lightgray\">");
@@ -31,9 +33,8 @@ public class ForgotPasswordUiTest extends TestBase {
 
 	@Test
 	public void testForgotPassUi() throws Exception {
-		driver = appLibrary.getDriverInstance();
-	
-	System.out.println(driver.toString());
+		driver = (AndroidDriver<MobileElement>) appLibrary.getDriverInstance();
+		System.out.println(driver.toString());
 	new ForgotPasswordPage(driver).verifyForgotPassPageUi();
 		System.out.println("Verified Successfully ");
 	}

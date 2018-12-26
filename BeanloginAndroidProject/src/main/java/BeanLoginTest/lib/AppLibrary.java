@@ -44,6 +44,12 @@ import org.testng.Reporter;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -58,7 +64,8 @@ import jxl.write.biff.RowsExceededException;
 public class AppLibrary {
 
 	public static final long GLOBALTIMEOUT = 30;
-	private WebDriver driver; // Driver instance
+	private AndroidDriver<WebElement> driverr; // android Driver instance
+	private WebDriver driver;
 	private WebDriver mailDriver; // Default Driver instance
 	private Configuration config;
 	public String appDirr;
@@ -113,8 +120,9 @@ public class AppLibrary {
 		appName = (System.getProperty("appName") != null && !(System.getProperty("appName").equals("${appName}")))
 				? System.getProperty("appName") : getConfiguration().getappName();
 
-		deviceName = (System.getProperty("deviceName") != null && !(System.getProperty("deviceName").equals("${deviceName}")))
-				? System.getProperty("deviceName") : getConfiguration().getDeviceName();
+		deviceName = (System.getProperty("deviceName") != null
+				&& !(System.getProperty("deviceName").equals("${deviceName}"))) ? System.getProperty("deviceName")
+						: getConfiguration().getDeviceName();
 
 		baseUrl = (System.getProperty("instanceUrl") != null
 				&& !(System.getProperty("instanceUrl").equals("${instanceUrl}"))) ? System.getProperty("instanceUrl")
@@ -330,20 +338,25 @@ public class AppLibrary {
 
 			} else if (browser.equalsIgnoreCase("android")) {
 
-				String driverPath = getConfiguration().getChromeDriverPath();
+				// String driverPath = getConfiguration().getChromeDriverPath();
 				File appDir = new File(appDirr);
 				File app = new File(appDir, appName);
 				caps.setCapability("device", browser);
 				// mandatory capabilities
-				caps.setCapability("chromedriverExecutable", driverPath);
+				// caps.setCapability("chromedriverExecutable", driverPath);
 				caps.setCapability("deviceName", deviceName);
 				caps.setCapability("platformName", browser);
 				caps.setCapability("unicodeKeyboard", true);
 				caps.setCapability("resetKeyboard", true);
+				caps.setCapability("noResetValue",false);
 				// other caps
 				caps.setCapability("app", app.getAbsolutePath());
-			  driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), caps);
-			  
+				driverr = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
+				// driver = new RemoteWebDriver(new
+				// URL("http://0.0.0.0:4723/wd/hub"), caps);
+				driverr.manage().timeouts().implicitlyWait(GLOBALTIMEOUT, TimeUnit.SECONDS);
+				return driverr;
+
 			} else if (browser.equalsIgnoreCase("GCH") || browser.equalsIgnoreCase("chrome")) {
 				String driverPath = getConfiguration().getChromeDriverPath();
 				if ((driverPath == null) || (driverPath.trim().length() == 0)) {
@@ -922,6 +935,43 @@ public class AppLibrary {
 		return element;
 	}
 
+	public static WebElement findElementForMobile(AndroidDriver<MobileElement> driver, String locatorString) {
+
+		String string = locatorString;
+		String[] parts = string.split(":");
+		String type = parts[0]; // 004
+		String object = parts[1];
+		if (parts.length > 2) {
+			for (int i = 2; i < parts.length; i++) {
+				object = object + ":" + parts[i];
+			}
+		}
+		Reporter.log("Finding element with logic: " + locatorString, true);
+		System.out.println("Finding element with logic: " + locatorString);
+		MobileElement element = null;
+		if (type.equals("id")) {
+			element = driver.findElement(By.id(object));
+		} else if (type.equals("name")) {
+			element = driver.findElement(By.name(object));
+		} else if (type.equals("class")) {
+			element = driver.findElement(By.className(object));
+		} else if (type.equals("link")) {
+			;
+			element = driver.findElement(By.linkText(object));
+		} else if (type.equals("partiallink")) {
+			;
+			element = driver.findElement(By.partialLinkText(object));
+		} else if (type.equals("css")) {
+			element = driver.findElement(By.cssSelector(object));
+		} else if (type.equals("xpath")) {
+			element = driver.findElement(By.xpath(object));
+		} else {
+			throw new RuntimeException("Please provide correct element locating strategy");
+		}
+
+		return element;
+	}
+
 	public static By getLocatorType(String locatorString) {
 		String string = locatorString;
 		String[] parts = string.split(":");
@@ -956,6 +1006,20 @@ public class AppLibrary {
 		try {
 			System.out.println(locatorString);
 			return findElement(driver, locatorString);
+		} catch (NoSuchElementException nse) {
+			if (isOptional) {
+				return null;
+			} else {
+				throw new RuntimeException("Element " + locatorString + " not found");
+			}
+		}
+	}
+
+	public static WebElement findElementForMobile(AndroidDriver<MobileElement> driver, String locatorString,
+			boolean isOptional) {
+		try {
+			System.out.println(locatorString);
+			return findElementForMobile(driver, locatorString);
 		} catch (NoSuchElementException nse) {
 			if (isOptional) {
 				return null;
@@ -1084,6 +1148,26 @@ public class AppLibrary {
 		return verifyElement(driver, locatorString, false);
 	}
 
+	public static boolean verifyMobileElement(AndroidDriver<MobileElement> driver, String locatorString) {
+		return verifyMobileElement(driver, locatorString, false);
+	}
+	
+	
+	public static boolean verifyMobileElement(AndroidDriver<MobileElement> driver, String locatorString, boolean checkVisibility) {
+		boolean isDisplayed = true;
+		try {
+			if (checkVisibility) {
+				isDisplayed = (findElementForMobile(driver, locatorString).isDisplayed());
+			} else {
+				findElementForMobile(driver, locatorString);
+			}
+		} catch (NoSuchElementException nsee) {
+			Assert.assertTrue(false, "Element not found using locator: " + locatorString);
+		}
+		return isDisplayed;
+	}
+
+	
 	public static boolean verifyElement(WebDriver driver, String locatorString, boolean checkVisibility) {
 		boolean isDisplayed = true;
 		try {
@@ -1180,7 +1264,39 @@ public class AppLibrary {
 		String[] parts = string.split(":");
 		String type = parts[0];
 		String object = parts[1];
-		
+
+		if (parts.length > 2) {
+			for (int i = 2; i < parts.length; i++) {
+				object = object + ":" + parts[i];
+			}
+		}
+
+		if (type.equals("id")) {
+			return By.id(object);
+		} else if (type.equals("name")) {
+			return By.name(object);
+		} else if (type.equals("class")) {
+			return By.className(object);
+		} else if (type.equals("link")) {
+			return By.linkText(object);
+		} else if (type.equals("partiallink")) {
+			return By.partialLinkText(object);
+		} else if (type.equals("css")) {
+			return By.cssSelector(object);
+		} else if (type.equals("xpath")) {
+			return By.xpath(object);
+		} else {
+			throw new RuntimeException("Please provide correct element locating strategy");
+		}
+	}
+
+	public static By getMobileBy(MobileDriver<MobileElement> driver, String locatorString) {
+
+		String string = locatorString;
+		String[] parts = string.split(":");
+		String type = parts[0];
+		String object = parts[1];
+
 		if (parts.length > 2) {
 			for (int i = 2; i < parts.length; i++) {
 				object = object + ":" + parts[i];
@@ -1240,6 +1356,10 @@ public class AppLibrary {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(element));
 	}
 
+	public static void waitForMobileElementClickable(AndroidDriver<MobileElement> driver, WebElement element) {
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(element));
+	}
+
 	public void waitForElementVisible(WebElement element) {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(element));
 	}
@@ -1254,6 +1374,19 @@ public class AppLibrary {
 		if (AppLibrary.findElement(driver, locator).isSelected()) {
 			AppLibrary.clickElement(driver, locator);
 		}
+	}
+
+	public static void enterMobileText(AndroidDriver<MobileElement> driver, String locator, String text) {
+		// driver.findElement(getMobileBy(driver, locator)).sendKeys(text);
+		if (!text.equalsIgnoreCase("")) {
+			new TouchAction(driver).tap(driver.findElement(getMobileBy(driver, locator))).perform();
+			MobileElement ele = (MobileElement) driver.findElement(getMobileBy(driver, locator));
+			ele.clear();
+
+			MobileElement element = (MobileElement) driver.findElement(getMobileBy(driver, locator));
+			element.sendKeys(text);
+		}
+
 	}
 
 	public static void enterText(WebDriver driver, String locator, String text) {
@@ -1292,6 +1425,26 @@ public class AppLibrary {
 			driver.findElement(getBy(driver, locator)).sendKeys(text);
 		}
 
+	}
+
+	public static void clickMobileElement(AndroidDriver<MobileElement> driver, String locator) throws Exception {
+
+		int i = 0;
+		do {
+			try {
+				new TouchAction(driver).tap(driver.findElement(getMobileBy(driver, locator))).perform();
+				break;
+			} catch (Exception e) {
+				AppLibrary.sleep(1000);
+				i++;
+				continue;
+			}
+
+		} while (i < 5);
+
+		if (i >= 5) {
+			throw new ElementNotFoundException(locator, "ElementVal", "Not Found");
+		}
 	}
 
 	public static void clickElement(WebDriver driver, String locator) {
@@ -1400,6 +1553,36 @@ public class AppLibrary {
 		}
 	}
 
+	public static void waitUntilMobileElementDisplayed(AndroidDriver<MobileElement> driver, String locatorString) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		String string = locatorString;
+		String[] parts = string.split(":");
+		String type = parts[0];
+		String object = parts[1];
+
+		Reporter.log("Finding element with logic: " + locatorString, true);
+		if (type.equals("id")) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(object)));
+		} else if (type.equals("name")) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(object)));
+		} else if (type.equals("class")) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(object)));
+		} else if (type.equals("link")) {
+			;
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(object)));
+		} else if (type.equals("partiallink")) {
+			;
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(object)));
+		} else if (type.equals("css")) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(object)));
+		} else if (type.equals("xpath")) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(object)));
+		} else {
+			throw new RuntimeException("Please provide correct element locating strategy");
+		}
+	}
+
 	public static void verifyAbsent(WebDriver driver, String locatorString) {
 
 		String string = locatorString;
@@ -1463,6 +1646,20 @@ public class AppLibrary {
 		} catch (Exception e) {
 			AppLibrary.sleep(5000);
 			AppLibrary.findElement(driver, locator, true).click();
+		}
+	}
+
+	public static void syncAndClickMobileElement(AndroidDriver<MobileElement> driver, String locator) {
+		try {
+
+			// new
+			// TouchAction(driver).tap(driver.findElement(getMobileBy(driver,
+			// locator))).perform();
+			AppLibrary.waitForMobileElementClickable(driver, AppLibrary.findElementForMobile(driver, locator, true));
+			AppLibrary.findElementForMobile(driver, locator, true).click();
+		} catch (Exception e) {
+			AppLibrary.sleep(5000);
+			AppLibrary.findElementForMobile(driver, locator, true).click();
 		}
 	}
 
